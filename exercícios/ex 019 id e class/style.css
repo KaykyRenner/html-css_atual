@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+body{
+    background-image: linear-gradient(to bottom, #25365981,#039b7fce ) ;
+    font-family: sans-serif;
+}
+.destaque{background-color: #4668644f;}
+h1{color: #253659;}
+h2.intermediario{color: #af6d53;}
+h2.avançado{color: #b95454;}
+h1#principal{ 
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+p{text-align: justify;}
+h2.basico{color: #af8c5cfd ;}
