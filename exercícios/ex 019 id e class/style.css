@@ -9,10 +9,10 @@ h1{color: #253659;}
 h2.intermediario{color: #af6d53;}
 h2.avançado{color: #b95454;}
 h1#principal{ 
-    text-align: center;
+    margin: auto;
     font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: normal;
   font-style: normal;
 }
 p{text-align: justify;}

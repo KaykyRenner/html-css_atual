@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            background-color: #F48037;
+            margin: 0px;
+        
+        }
+        header{background-color: white;
+            margin: 10px;
+            padding: 5px 10px;
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 5px 10px;
+            border-radius:5px 16px;
+            box-shadow:2px 3px 8px 1px #00000070;
+
+         }
+        main>section{background-color: white ;
+        margin: 10px;
+        padding: 1px;  }
+        section>aside{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+        }
+        footer{
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        header>h1{
+            background-color: #a352204f;
+            padding: 10px;
+            margin: 10px;
+        }
+        aside>p{
+            background-color: #a352204f;
+            margin: 10px;
+            padding: 5px;
+
+        }
+        nav>a{
+            text-decoration: underline;
+            margin-right: 30px;
+
+        }
+        nav{
+            background-color: #a352204f;
+            margin: 10px;
+            box-shadow: 1px 2px 0px 1px #00000045;
+        }
+        nav>a:hover{
+            color: black;
+        }
+        article>h2{
+            background-color:#a352204f;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+        <nav><a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id ="assuntos">
+            <p>política</p>
+        </section>
+        <section ind="Notícias">
+                <article class="artigo"><h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae in magnam illum iusto, assumenda placeat dolorem earum corrupti adipisci, totam voluptatem. Laudantium necessitatibus porro veniam explicabo ab. Modi, harum!</p>
+                <aside>
+                    <p class="artigo">Artigo de kaka</p>
+                </aside>
+                </article>
+                <article>
+
+                </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvedor Kayky</p>
+    </footer>
+</body>
+</html>
