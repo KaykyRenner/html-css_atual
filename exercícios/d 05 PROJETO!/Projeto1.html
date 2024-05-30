@@ -8,25 +8,35 @@
     <style>
 
         body{
-            background-color: #39b37eb9;}
-        .negrito{color: #056d40;}    
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        background-color: #077c498c;
+        margin: 0 ;}
+        .negrito{color: #056d40;}  
+        #strongLink{color: #056d40;} 
+        #strongLink:hover{background-color: #4691703d;
+        } 
             
 
 
         header{
-            background-image: linear-gradient(to bottom, #04c26f, #005C34);
+            background-image: linear-gradient(to bottom, #04c26f, #013a21);
             margin: 0px -8px;
-            padding: 10px 10px 10px 10px;
+            padding: 10px 20px ;
             text-align: center;
             color: white;
+            
         }
         header>section>article>p{
             margin: -11px 10px 24px 10px;
         }
         header>nav{
             text-align: left;
+            
+            
         }
-        header>nav>a{
+        a{
             color: white;
             text-decoration: none;
             margin-right: 10px;
@@ -36,34 +46,83 @@
             font-weight: bolder;
         }    
         
-        main{background-color: white;
-        margin-left: 150px;
-        margin-right: 150px;
-        display: flex;}
-        main>section>h1{color:#005C34;
-        text-align: center; }
-    main>section>article>p{
+        main{
+        padding: 20px;
+        background-color: white;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        overflow: hidden;
+        
+        
+    }
+        main>section>h1{color:#005C34;text-align: center;}
+    
+    .parágrafo{
         text-align: justify;
         text-indent: 30px;
-        padding: 0px 17px 0px 17px;   
-    }
-    main>section>h2{
+        padding: 20px 25px 10px 25px;
+        margin: 10px 0px 10px 0px; 
+        text-indent: 2em;
+        line-height: 2em;
+        font-size: 16px;
+
+        }
+    .últimaLinha{background-color: #c5ebd6;
+        margin: 0px 0px 0px 0px;
+    }    
+    h2{
         padding: 0px 0px 0px 10px;
         margin: 2px 100px 10px 15px;
         color: #00693B;
         background-color: #00693c31;
         box-shadow: 2px 2px 5px 0px #00000042;;
         border-radius: 7px 0px 0px 7px;
+        font-family: 'idroid';
     
     }
+    img{
+        width: 100%;  
         
-    
+    }
+    #imglink{width: 1.5%;}
+    #imagemirina{width: 95%;
+        margin: 0 auto;
+        display: flex;
+    }
+    #imagebugdroid{
+        width: 20%;
+        display: flex;
+        margin: 0 auto;
+    }
+    iframe{display: flex;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 315px;
+    margin-top: 20px;}
+
+    main>section>
     .idroid{font-family: 'idroid';}
-    @media (max-width: 768px) {
-    main {
+    h3{background-color: #00A85F;
+    color: rgba(255, 255, 255, 0.918);
+    font-size: 16px;
+    margin-bottom:-10px;
+    padding: 10px 5px ;
+    border-radius: 5px 5px 0px 0px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+    header {
         padding: 10px 0;
-        margin: 0;
-    }}
+    }
+    header>nav{padding: 20px;}
+
+    main {
+        padding: 10px;
+    }
+}
     @font-face {
         font-family:'idroid' ;
         src: url('idroid/idroid bold.otf') format('opentype');
@@ -73,15 +132,23 @@
     
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');    
 main{
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-header{
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        header{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        header>h1{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+        }
+        .image{width: 1.5%;
+        padding: 0px 0px 0px 0px;}
     </style>
 </head>
 <body>
@@ -103,10 +170,20 @@ header{
             <section>
                 <h1 class="idroid">HISTORIA DO MASCOTE DO ANDROIDE</h1>
                 <article>
-                    <p>Provavelmente você sabe que o sistema operacional <strong class="negrito">Android</strong>, mantido pelo <strong class="negrito">Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+                    <p class="parágrafo">Provavelmente você sabe que o sistema operacional <strong class="negrito">Android</strong>, mantido pelo <strong class="negrito">Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
                 </article>
                 <h2 class="idroid">A primeira versão</h2>
-                <article><p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p></article>
+                <article><p class="parágrafo">A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p></article>
+                <picture ><source media="(max-width:1100px)" srcset="pacote-projeto-d010/imagens/dan-droids-pq.png" type="image/png"><img src="pacote-projeto-d010/imagens/dan-droids.png" alt="Android"></source></picture></article>
+                    <p class="parágrafo">Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <strong class="negrito">Dandroids.</strong></p>
+                <h2 class="idroid">SURGE UM NOVO MASCOTE</h2> 
+                <article><p class="parágrafo">A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a  href="https://www.irinablok.com/"><strong id="strongLink">Irina Blok <img id="imglink" src="pacote-projeto-d010/imagens/link17.webp" alt=""></strong></a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p><picture><source media="(max-width:768px)" srcset="pacote-projeto-d010/imagens/irina-blok-pq.jpg" type="image/png"><img id="imagemirina"src="pacote-projeto-d010/imagens/irina-blok.jpg" alt=""></source></picture>
+                    <p class="parágrafo">A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <strong class="negrito">Bugdroid</strong>, o novo mascote do Android.</p>
+                    <img id="imagebugdroid" src="pacote-projeto-d010/imagens/bugdroid.png" alt=""><p class="parágrafo">A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=nGQbHcUOsXyxJyBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
+                    <h3>quer aprender mais?</h3>
+                    <article class="últimaLinha"><p class="parágrafo">Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p></article>
+
             </section>
         </main>
         </p>
