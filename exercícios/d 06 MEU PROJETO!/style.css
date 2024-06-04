@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+body{margin: 0px;
+    padding: 0px;
+    border: 0px;
+    }
+header{
+    background-color: black;
+    color: white;
+}
+header h1{
+    text-align: center;
+    font-size: 10vw;
+    margin: 0;
+    padding-top: 50px;
+    font-family: "Passion One", sans-serif;
+    font-weight: bold;
+}
+header p {
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 50px;
+}
+main{
+    margin: 0px;
+    padding: 0px;
+
+}
+section{
+    font-size: 3.5em;
+}
+section p{
+    font-family: "Sriracha", cursive
+    
+}
+section.normal{
+    background-color: white;
+    font-size: ;
+}
+#m1{
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-position: auto;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#m2{
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
