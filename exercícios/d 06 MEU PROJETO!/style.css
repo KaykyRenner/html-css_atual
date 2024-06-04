@@ -1,53 +1,92 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
-body{margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-height: 100vh;
     border: 0px;
     }
 header{
+    text-align: center;
     background-color: black;
     color: white;
 }
 header h1{
-    text-align: center;
     font-size: 10vw;
-    margin: 0;
     padding-top: 50px;
     font-family: "Passion One", sans-serif;
-    font-weight: bold;
+    font-variant: small-caps;
 }
 header p {
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     padding-bottom: 50px;
 }
-main{
-    margin: 0px;
-    padding: 0px;
-
+header a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
 }
 section{
-    font-size: 3.5em;
+    font-family:"Sriracha", cursive; ;
+    font-size: 3vw;
+    line-height: 2em;
+    padding: 10vh 30px 10vh 30px;
 }
 section p{
-    font-family: "Sriracha", cursive
-    
+    padding-bottom: 2em;
 }
 section.normal{
     background-color: white;
-    font-size: ;
+}
+section.img{
+    color: white;
+    background-color: white; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.322);
+
+}
+.img>p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+
 }
 #m1{
     background-image: url(pacote-d012/imagens/background001.jpg);
-    background-position: auto;
+    background-position: right center;
     background-repeat:no-repeat ;
     background-size: cover;
     background-attachment: fixed;
 }
 #m2{
     background-image: url(pacote-d012/imagens/background002.jpg);
-    background-position: auto;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
