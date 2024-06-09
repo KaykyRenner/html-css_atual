@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{
+    
+    background-image: url(../img/cev-landscape.jpg);
+   
+    background-size: contain;
+    
+}
+h1{
+    font-size:  1.2em;
+}
