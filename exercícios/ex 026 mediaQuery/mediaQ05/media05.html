@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Q</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus maxime accusamus voluptatem velit cum dolorum, id inventore dolore voluptatibus eos deleniti odio saepe perferendis. Repudiandae expedita laborum corrupti dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit! Veritatis hic, reprehenderit, corporis magni facilis similique cumque quae sed dolorum perspiciatis vero eum facere, temporibus libero atque ex laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit amet exercitationem, officiis ipsa nisi suscipit voluptatum enim facere excepturi quas cumque voluptates repellat placeat dolores blanditiis, deserunt corrupti mollitia. Saepe!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quos molestiae ullam error nesciunt sit illum optio quas officiis, quisquam ex quidem ut? Velit tempore cumque excepturi ducimus voluptates maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptatibus repudiandae, nisi molestias corrupti quas eligendi doloribus perspiciatis repellat commodi quibusdam nam non laborum officia, quaerat laboriosam accusantium, officiis eos?</p>
+        </article>
+    </main>
+<script>
+    function clickMenu(){
+        if(menu.style.display=='block'){
+            menu.style.display = 'none'
+        }else{
+            menu.style.display='block'
+        }
+    }
+
+</script>
+</body>
+</html>
