@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        html, body{
+            background-color: orange;
+        }
+        .container>div{
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            margin: 10px;
+            padding: 26px;
+            text-align: center;
+            transition: all 150ms ease;}
+
+        .container{
+            display: flex;
+            border: 5px solid white;
+            height: 300px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </main>
+</body>
+</html>

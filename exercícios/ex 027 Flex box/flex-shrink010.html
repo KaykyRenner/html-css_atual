@@ -20,15 +20,22 @@
         .container:hover>*{background-color: rgba(255, 255, 255, 0.4);}
         .container{
             display: flex;
-            flex-direction: column ;
+            border: 5px solid white;
+            width: 400px;
+
+        }
+        .container div:nth-child(3){
+            flex-shrink: 3;
             
         }
-        @media screen and (min-width:980px) {
-            .container{
-                flex-direction: row;
-            }
+        .container>div{
             
+            margin: 0px;
+            padding: 0px;
+            width: 150px;
+            flex-shrink: 1;
         }
+    
             
     </style>
 </head>
@@ -38,22 +45,6 @@
         <div>2</div>
         <div>3</div>
         <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>10</div>
-        <div>11</div>
-        <div>12</div>
-        <div>13</div>
-        <div>14</div>
-        <div>15</div>
-        <div>16</div>
-        <div>17</div>
-        <div>18</div>
-        <div>19</div>
-        <div>20</div>
     </main>
 </body>
 </html>

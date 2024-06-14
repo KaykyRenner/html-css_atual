@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>flex</title>
     <style>
         html, body{
             background-color: orange;
@@ -15,21 +15,14 @@
             margin: 10px;
             padding: 26px;
             text-align: center;
-            transition: all 150ms ease;
-        }
-        .container:hover>*{background-color: rgba(255, 255, 255, 0.4);}
+            transition: all 150ms ease;}
+
         .container{
             display: flex;
-            flex-direction: column ;
-            
+            border: 5px solid white;
+            width: 500px;
+            flex-wrap: wrap-reverse;
         }
-        @media screen and (min-width:980px) {
-            .container{
-                flex-direction: row;
-            }
-            
-        }
-            
     </style>
 </head>
 <body>
